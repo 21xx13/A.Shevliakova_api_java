@@ -21,7 +21,7 @@ public class Main {
                 result.append((char) read);
                 read = bf.read();
             }
-            //получение факта ключу "text"
+            //получение факта по ключу "text"
             String jsonResult = new JSONObject(result.toString()).get("text").toString();
             //вывод
             System.out.println("Ответ в формате json: " + result.toString()); //вывод полного ответа
